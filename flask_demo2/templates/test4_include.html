@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板包含</title>
+</head>
+<body>
+{% include 'include.html' %}
+{% include 'include.html' %}
+{% include 'include.html' %}
+{% include 'include.html' %}
+{# 忽略异常 #}
+{% include 'include.html2' ignore missing %}
+</body>
+</html>

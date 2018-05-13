@@ -1,0 +1,4 @@
+{# 模板宏定义：宏相当于函数，调用模板宏传入不同参数可以产生不同内容 #}
+{% macro input(label="", type="text", name="", value="") %}
+    <label>{{ label }}</label><input type="{{ type }}" name="{{ name }}" value="{{ value }}">
+{% endmacro %}

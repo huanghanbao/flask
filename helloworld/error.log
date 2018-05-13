@@ -1,0 +1,37 @@
+[2018-05-12 00:04:07 +0800] [8139] [INFO] Starting gunicorn 19.8.1
+[2018-05-12 00:04:07 +0800] [8139] [INFO] Listening at: http://127.0.0.1:8001 (8139)
+[2018-05-12 00:04:07 +0800] [8139] [INFO] Using worker: sync
+[2018-05-12 00:04:07 +0800] [8142] [INFO] Booting worker with pid: 8142
+[2018-05-12 00:04:07 +0800] [8143] [INFO] Booting worker with pid: 8143
+[2018-05-12 00:04:08 +0800] [8144] [INFO] Booting worker with pid: 8144
+[2018-05-12 00:04:08 +0800] [8145] [INFO] Booting worker with pid: 8145
+[2018-05-12 08:13:46 +0800] [8139] [CRITICAL] WORKER TIMEOUT (pid:8142)
+[2018-05-12 08:13:46 +0800] [8142] [INFO] Worker exiting (pid: 8142)
+[2018-05-12 08:13:47 +0800] [8155] [INFO] Booting worker with pid: 8155
+[2018-05-12 14:09:16 +0800] [8139] [CRITICAL] WORKER TIMEOUT (pid:8144)
+[2018-05-12 14:09:16 +0800] [8139] [CRITICAL] WORKER TIMEOUT (pid:8145)
+[2018-05-12 14:09:16 +0800] [8139] [CRITICAL] WORKER TIMEOUT (pid:8143)
+[2018-05-12 14:09:16 +0800] [8143] [INFO] Worker exiting (pid: 8143)
+[2018-05-12 14:09:16 +0800] [8144] [INFO] Worker exiting (pid: 8144)
+[2018-05-12 14:09:16 +0800] [8145] [INFO] Worker exiting (pid: 8145)
+[2018-05-12 14:09:16 +0800] [8682] [INFO] Booting worker with pid: 8682
+[2018-05-12 14:09:16 +0800] [8683] [INFO] Booting worker with pid: 8683
+[2018-05-12 14:09:16 +0800] [8684] [INFO] Booting worker with pid: 8684
+[2018-05-12 19:30:10 +0800] [8139] [CRITICAL] WORKER TIMEOUT (pid:8682)
+[2018-05-12 19:30:10 +0800] [8139] [CRITICAL] WORKER TIMEOUT (pid:8683)
+[2018-05-12 19:30:10 +0800] [8139] [CRITICAL] WORKER TIMEOUT (pid:8684)
+[2018-05-12 19:30:10 +0800] [8139] [CRITICAL] WORKER TIMEOUT (pid:8155)
+[2018-05-12 19:30:10 +0800] [8682] [INFO] Worker exiting (pid: 8682)
+[2018-05-12 19:30:10 +0800] [8683] [INFO] Worker exiting (pid: 8683)
+[2018-05-12 19:30:10 +0800] [8684] [INFO] Worker exiting (pid: 8684)
+[2018-05-12 19:30:10 +0800] [8155] [INFO] Worker exiting (pid: 8155)
+[2018-05-12 19:30:10 +0800] [10991] [INFO] Booting worker with pid: 10991
+[2018-05-12 19:30:10 +0800] [10992] [INFO] Booting worker with pid: 10992
+[2018-05-12 19:30:11 +0800] [10996] [INFO] Booting worker with pid: 10996
+[2018-05-12 19:30:11 +0800] [10999] [INFO] Booting worker with pid: 10999
+[2018-05-12 20:07:07 +0800] [10999] [INFO] Worker exiting (pid: 10999)
+[2018-05-12 20:07:07 +0800] [10992] [INFO] Worker exiting (pid: 10992)
+[2018-05-12 20:07:07 +0800] [10991] [INFO] Worker exiting (pid: 10991)
+[2018-05-12 20:07:07 +0800] [10996] [INFO] Worker exiting (pid: 10996)
+[2018-05-12 20:07:07 +0800] [8139] [INFO] Handling signal: term
+[2018-05-12 20:07:07 +0800] [8139] [INFO] Shutting down: Master

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WTF表单</title>
+</head>
+<body>
+<form method="post">
+    <label>用户名:</label><input type="text" name="username" value=""><br/>
+    <label>密码:</label><input type="password" name="password" value=""><br/>
+    <label>重复密码:</label><input type="password" name="password2" value=""><br/>
+    <input type="submit" name="" value="注册"><br/>
+    {% for msg in get_flashed_messages() %}
+        {{ msg }}<br/>
+    {% endfor %}
+</form>
+<h3>wtf表单</h3>
+<form method="post">
+    {# 产生一个csrf_token #}
+    {{ form.csrf_token() }}
+    {{ form.username.label }} {{ form.username }}<br/>
+    {{ form.password.label }} {{ form.password }}<br/>
+    {{ form.password2.label }} {{ form.password2 }}<br/>
+    {{ form.submit }}
+</form>
+</body>
+</html>

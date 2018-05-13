@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板宏</title>
+</head>
+<body>
+<form>
+    <label>用户名</label><input type="text" name="username" value=""><br/>
+    <label>密码</label><input type="password" name="password" value=""><br/>
+    <label>重复密码</label><input type="password" name="password2" value=""><br/>
+    <input type="submit" name="" value="注册">
+</form>
+{# 模板宏定义 #}
+<h3>模板宏</h3>
+{# 模板宏定义：宏相当于函数，调用模板宏传入不同参数可以产生不同内容 #}
+{% macro input(label="", type="text", name="", value="") %}
+    <label>{{ label }}</label><input type="{{ type }}" name="{{ name }}" value="{{ value }}">
+{% endmacro %}
+<form>
+    {{ input("用户名：", name="username") }}<br/>
+    {{ input("密码：", type="password", name="password") }}<br/>
+    {{ input("重复密码：", type="password", name="password2") }}<br/>
+    {{ input(type="submit", value="注册") }}
+</form>
+<h3>使用其他模板中定义宏</h3>
+{% import "macro.html" as func %}
+<form>
+    {{ func.input("用户名：", name="username") }}<br/>
+    {{ func.input("密码：", type="password", name="password") }}<br/>
+    {{ func.input("重复密码：", type="password", name="password2") }}<br/>
+    {{ func.input(type="submit", value="注册") }}
+</form>
+
+</body>
+</html>

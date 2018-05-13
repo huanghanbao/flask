@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书作者案例</title>
+</head>
+<body>
+<form method="post" action="/create">
+    {{ form.csrf_token() }}
+    {{ form.author_name.label }} {{ form.author_name }}<br/>
+    {{ form.book_btitle.label }} {{ form.book_btitle }}<br/>
+    {{ form.submit }}<br/>
+    {# 获取闪现消息 #}
+    {% for msg in get_flashed_messages() %}
+        {{ msg }}<br/>
+    {% endfor %}
+    
+</form>
+<ul>
+    {% for author in authors %}
+        <li>{{ author.name }}
+            <ul>
+                {% for book in author.books %}
+                    <li>{{ book.title }}--<a href="/delete/{{ book.id }}">删除</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

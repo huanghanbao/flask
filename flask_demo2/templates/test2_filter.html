@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板文件</title>
+</head>
+<body>
+<h1>模板</h1>
+<h3>演示模板变量使用</h3>
+{{ my_dict }}<br>
+{{ my_li }}<br>
+{{ my_int }}<br>
+
+{{ my_dict.name }}<br>
+{{ my_li.2 }}<br>
+{{ my_dict["name"] }}<br>
+{{ my_li[2] }}<br>
+{# Jinja2模板变量可以直接进行算术运算 #}
+{{ my_int + 3 }}<br>
+<h3>演示过滤器的使用</h3>
+{{ "hello world" | reverse | upper }}<br/>
+{{ 'hello every one' | truncate(9, killwords=Ture, end="", leeway=0) }}<br/>
+{{ my_li|li_reverse }}<br/>
+{{ my_li }}
+<h3>演示模板控制语句</h3>
+<ul>
+    {% for i in my_li %}
+    {% if i >= 5 %}
+        <li>{{ loop.index }}--{{ i }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+<hr/>
+<ul>
+    {% for i in my_li %}
+        <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

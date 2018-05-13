@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}父模板{% endblock %}</title>
+</head>
+<body>
+<h1>网站导航</h1>
+{# 父模板中可以使用block预留块，子模板继承父模板之后，可以重写父模板对应块中的内容 #}
+{% block body %}
+<p>这是父模板中的body块</p>
+{% endblock %}
+<h1>版权信息</h1>
+</body>
+</html>

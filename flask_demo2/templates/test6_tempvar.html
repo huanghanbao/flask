@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板特殊变量和方法</title>
+</head>
+<body>
+<h3>模板变量</h3>
+config: {{ config['DEBUG'] }}<br/>
+request: {{ request.url }}<br/>
+session: {{ session.new }}<br/>
+g: {{ g }}
+<h3>模板方法</h3>
+url_for: <a href="{{ url_for("index") }}">首页</a><br/>
+get_flashed_messages: {{ get_flashed_messages }}<br/>
+{# 获取闪现消息 #}
+{% for msg in get_flashed_messages() %}
+    {{ msg }}<br/>
+{% endfor %}
+
+</body>
+</html>

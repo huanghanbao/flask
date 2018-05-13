@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}子模板{% endblock %}
+{% block body %}
+    {# 获取父模板中的内容 #}
+    {{ super() }}
+    <p>这是子模板重写body中的内容</p>
+{% endblock %}
